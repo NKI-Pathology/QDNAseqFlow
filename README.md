@@ -11,6 +11,7 @@ Unzip the zip file in your Home directory, 'My Documents' or where you are allow
 **Required R-version etc.**
 
 R: We have made most tests with R 3.4.1. QDNAseqFlow might work with older R versions but the risk is that some required libraries might not be available.
+
 Java: You need to hava java installed. Make sure it is in your path. On Windows, this is done like here: https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html
 
 **Usage**
