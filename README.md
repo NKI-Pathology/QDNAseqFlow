@@ -1,7 +1,10 @@
 **Introduction**
+
 Please have a look at [QDNAseqFlow-Abstract.pdf](https://github.com/NKI-Pathology/QDNAseqFlow/blob/master/QDNAseqFlow-Abstract.pdf) and [QDNAseqFlow\_poster\_ISMB.pdf](https://github.com/NKI-Pathology/QDNAseqFlow/blob/master/QDNAseqFlow_poster_ISMB.pdf) for an introduction.
 To better understand how QDNAseq, the main component of this pipeline, works: [Christian-Rausch-QDNAseq-talk\_BioconductorDec2015.pdf](https://github.com/NKI-Pathology/QDNAseqFlow/blob/master/Christian-Rausch-QDNAseq-talk_BioconductorDec2015.pdf)
+
 **Usage**
+
 This workflow consists of 3 main R-programs, that need to be run consecutively:
 
 1. QDNAseq\_BAM2CopyNumbers.R
