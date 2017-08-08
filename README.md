@@ -3,6 +3,14 @@
 Please have a look at [QDNAseqFlow-Abstract.pdf](https://github.com/NKI-Pathology/QDNAseqFlow/blob/master/QDNAseqFlow-Abstract.pdf) and [QDNAseqFlow\_poster\_ISMB.pdf](https://github.com/NKI-Pathology/QDNAseqFlow/blob/master/QDNAseqFlow_poster_ISMB.pdf) for an introduction.
 To better understand how QDNAseq, the main component of this pipeline, works: [Christian-Rausch-QDNAseq-talk\_BioconductorDec2015.pdf](https://github.com/NKI-Pathology/QDNAseqFlow/blob/master/Christian-Rausch-QDNAseq-talk_BioconductorDec2015.pdf)
 
+** Installation **
+Go to https://github.com/NKI-Pathology/QDNAseqFlow and click button "Clone or Download" --> Download zip.
+Unzip the zip file in your Home directory, 'My Documents' or where you are allowed to install programs.
+
+**Required R-version etc.**
+R: We have made most tests with R 3.4.1. QDNAseqFlow might work with older R versions but the risk is that some required libraries might not be available.
+Java: You need to hava java installed. Make sure it is in your path. On Windows, this is done like here: https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html
+
 **Usage**
 
 This workflow consists of 3 main R-programs, that need to be run consecutively:
@@ -30,10 +38,6 @@ or with no options or with --help to get an overview of available command line o
 
 3. Via a Batch file (.bat, on Windows only)
 Edit the bat file with a text editor to adjust the path to your R-installation. Please note that the path must not contain white spaces, which means that R can not be installed at the default location on "program files", because otherwise no packages can be installed or compiled. This is ridiculous, please ask the R-developers.
-
-**Required R-version etc.**
-R: We have made most tests with R 3.4.1. It might work with older R versions but the risk is that some required libraries might not be available.
-Java: You need to hava java installed. Make sure it is in your path. On Windows, this is done like here: https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html
 
 **Dewaving  step (optional in script 3)**
 The dewaving step is optional. Although it relies on published code (NoWave program), right now we only have one proprietary reference dataset available that is based on NGS data. We would need normal samples, ideally for every tumor type and are currently looking for such data (if you can help us, please let us know). For now, running the dewave step requires a key, due to the proprietary reference data.
