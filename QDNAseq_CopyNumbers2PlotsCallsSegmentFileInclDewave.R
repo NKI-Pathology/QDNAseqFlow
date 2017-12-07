@@ -227,9 +227,10 @@ for (i in 1:ncol(copyNumbersSmooth)) {
 # copyNumbersSegmented <- segmentBins(copyNumbersSmooth, transformFun="log2", undo.SD=1)
 
 # experimental:
-# copyNumbersSegmented <- segmentBins(copyNumbersSmooth, transformFun="sqrt", undo.SD=undoSD, alpha=alpha, segmentStatistic ="seg.median")
+ copyNumbersSegmented <- segmentBins(copyNumbersSmooth, transformFun="sqrt", undo.SD=undoSD, alpha=alpha, segmentStatistic ="seg.median")
 
-copyNumbersSegmented <- segmentBins(copyNumbersSmooth, transformFun="sqrt", undo.SD=undoSD, alpha=alpha)
+# original: 
+#copyNumbersSegmented <- segmentBins(copyNumbersSmooth, transformFun="sqrt", undo.SD=undoSD, alpha=alpha)
 
 
 
